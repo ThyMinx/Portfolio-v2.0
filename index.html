@@ -1,31 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Cairns</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" type="text/javascript"></script>
-</head>
-<body>
-    <section id="home">
-        <div class="container row">
-            <div class="col-2"></div>
-            <div id="intro" class="col-6">
-                <h1>My name is <strong>James Cairns</strong></h1>
-                <h3>I am a <strong>software</strong> and <strong>web developer</strong></h3>
+<html>
+    <head>    
+        <link rel="stylesheet" href="./src/css/style.css">    
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <title>James Cairns</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <section class="hero">
+            <nav>
+                <img class="logo" src="./src/images/logo-light.png" alt="Personal logo"/>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <div class="hero-area">
+                <div class="hero-text">
+                    <h1>James Cairns</h1>
+                    <p>Software and Web Developer</p>
+                    <!-- <div class="button"><a href="#about-me">About me <i class="fas fa-chevron-right"></i></a></div> -->
+                    <div id="about-me-btn" class="button" section="about-me">About me <i class="fas fa-chevron-right"></i></div>
+                    <div id="proj-btn" class="button" section="projects">projects <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="socials">
+                    <!-- <a class="social" href="http://twitter.com/"><i class="fab fa-twitter"></i></a> -->
+                    <div><a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin"></i></a></div>
+                    <div><a href="https://www.github.com/thyminx" class="social"><i class="fab fa-github"></i></a></div>
+                </div>
             </div>
-            <div class="col-4"></div>
-        </div>
-    </section>
-    <section id="about">
+        </section>
+        <section class="sub-section" id="about-me">
+            <div class="information">
+                <h2>About Me</h2>
+                <p>Hello, my name is James Cairns. I am a web and software developer with a passion for creating projects to help improve day to day life.</p>
+            </div>
+            <div class="headshot-container">
+                <img class="headshot" src="./src/images/Anon-Persona.png" alt="James Cairns anonymous persona image"/>
+            </div>
+        </section>
+        <section class="sub-section-alt" id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="./src/images/project01.jpg" alt="Project one image" class="project-image"/>
+                    <h3>Project One</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://github.com/thyminx">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img src="./src/images/project02.jpg" alt="Project two image" class="project-image"/>
+                    <h3>Project Two</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://github.com/thyminx">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img src="./src/images/project03.jpg" alt="Project three image" class="project-image"/>
+                    <h3>Project Three</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://github.com/thyminx">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img src="./src/images/project04.jpg" alt="Project four image" class="project-image"/>
+                    <h3>Project Four</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://github.com/thyminx">View here</a></p>
+                </div>
+            </div>
+        </section>
 
-    </section>
-    <section id="contact">
+        <footer id="contact">
+            <h2>Contact Me</h2>
+            <p>to be added</p>
+        </footer>
 
-    </section>
-</body>
+        <script src="./src/js/script.js" type="text/javascript"></script>
+    </body>
 </html>
