@@ -168,12 +168,30 @@ hr {
 }
 
 .project-card {
+    min-width: 250px;
     width: 300px;
     height: 500px;
     /* border: 1px solid black; */
     border-radius: 10%;
     box-shadow: 5px 5px 20px gray;
     margin: 10px;
+}
+
+.project-view-more-card {
+    text-align: center;
+    min-width: 250px;
+    max-width: 400px;
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid black; */
+    border-radius: 10%;
+    box-shadow: 5px 5px 20px gray;
+    margin: 10px;
+}
+
+.project-view-more-card-details {
+    margin-top: 65%;
+    margin-bottom: 65%;
 }
 
 .project-image {
