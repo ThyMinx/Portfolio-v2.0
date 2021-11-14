@@ -88,7 +88,16 @@
 
         <footer id="contact">
             <h2>Contact Me</h2>
-            <p>to be added</p>
+            <p class="subtext">To get in contact with me please fill out the form.</p>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
+                <input style="display:none;" name="bot-field" action="/success/"/>
+                <div class="form-row">
+                    <input type="text" class="contact-input" id="name" placeholder="Full Name"/><br/>
+                    <input type="email" class="contact-input" id="inputEmail" placeholder="E-Mail"/><br/>
+                    <textarea class="contact-area" id="subject" placeholder="Message..."></textarea>
+                </div>
+                <button type="submit" class="email-btn">Submit</button>
+            </form>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
