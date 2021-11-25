@@ -35,11 +35,6 @@ req.onload = function(){
         {
             count = 1;
         }
-        console.log('count: ' + count);
-        console.log('name: ' + project.name);
-        console.log('description: ' + project.description);
-        console.log('language: ' + project.language);
-        console.log('link: ' + project.html_url);
         projectsHTML += '<div class="project-card">';
         projectsHTML += '<img src="./src/images/project0' + count + '.jpg" class="project-image"/>';
         projectsHTML += '<h3>' + project.name + '</h3>';
@@ -50,8 +45,6 @@ req.onload = function(){
     });
 
     projectsHTML += '<div class="project-view-more-card"><div class="project-view-more-card-details"><h3>View more projects</h3><hr/><p class="subtext"><a class="project-link" href="https://github.com/thyminx">Here</a></p></div></div>';
-
-    console.log(projectsHTML);
 
     $('.project-container').html(projectsHTML);
 };

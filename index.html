@@ -89,12 +89,12 @@
         <footer id="contact">
             <h2>Contact Me</h2>
             <p class="subtext">To get in contact with me please fill out the form.</p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
-                <input style="display:none;" name="bot-field" action="/success/"/>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit"  action="/success/">
+                <input style="display:none;" name="bot-field"/>
                 <div class="form-row">
-                    <input type="text" class="contact-input" id="name" placeholder="Full Name"/><br/>
-                    <input type="email" class="contact-input" id="inputEmail" placeholder="E-Mail"/><br/>
-                    <textarea class="contact-area" id="subject" placeholder="Message..."></textarea>
+                    <input type="text" name="Name" class="contact-input" id="name" placeholder="Full Name"/><br/>
+                    <input type="email" name="E-mail" class="contact-input" id="inputEmail" placeholder="E-Mail"/><br/>
+                    <textarea class="contact-area" name="Message" id="subject" placeholder="Message..."></textarea>
                 </div>
                 <button type="submit" class="email-btn">Submit</button>
             </form>
