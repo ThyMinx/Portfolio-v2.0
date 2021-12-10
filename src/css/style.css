@@ -164,7 +164,9 @@ hr {
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .project-card {
@@ -216,10 +218,16 @@ footer {
     border: 0px;
     border-color: #ef744b;
     border-radius: 15px;
-    height: 20px;
+    height: 25px;
     width: 250px;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 10px;
+}
+
+.contact-input:required:focus, .contact-area:required:focus {
+    border: 5px solid red;
 }
 
 .contact-area {
@@ -229,11 +237,16 @@ footer {
     height: 100px;
     width: 250px;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 10px;
 }
 
-.contact-input:focus, .contact-area:focus {
+.contact-input:hover, .contact-area:hover {
     outline: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 2px solid #ef744b;
 }
 
