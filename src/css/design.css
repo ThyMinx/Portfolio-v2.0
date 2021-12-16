@@ -1,0 +1,93 @@
+:root{
+    --primary-color: rgb(150, 24, 150);
+    --secondary-color: rgb(252, 155, 231);
+    --tertiary-color: rgb(41, 163, 41);
+}
+
+.des-primary {
+    background-color: var(--primary-color);
+}
+
+.des-secondary {
+    background-color: var(--secondary-color);
+}
+
+.des-tertiary {
+    background-color: var(--tertiary-color);
+}
+
+.des-dim-20 {
+    height: 20em;
+    width: 20em;
+}
+
+.des-dim-10 {
+    height: 10em;
+    width: 10em;
+}
+
+.des-dim-5 {
+    height: 5em;
+    width: 5em;
+}
+
+.des-w-100 {
+    width: 100vw;
+}
+
+.des-w-75 {
+    width: 75vw;
+}
+
+.des-w-50 {
+    width: 50vw;
+}
+
+.des-w-25 {
+    width: 25vw;
+}
+
+.des-w-10 {
+    width: 10vw;
+}
+
+.des-w-5 {
+    width: 5vw;
+}
+
+.des-circle-faded-primary {
+    background-image: radial-gradient(circle at center,var(--primary-color),rgba(255,255,255,0) 75%);
+    filter: blur(50px);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+}
+.des-circle-faded-secondary {
+    background-image: radial-gradient(circle at center,var(--secondary-color),rgba(255,255,255,0) 75%);
+    filter: blur(50px);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+}
+.des-circle-faded-tertiary {
+    background-image: radial-gradient(circle at center,var(--tertiary-color),rgba(255,255,255,0) 75%);
+    filter: blur(50px);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.des-top-left {
+    top: -5em;
+    left: -5em;
+}
+
+.des-top-right {
+    top: -2em;
+    right: 8em;
+}
+
+.des-btm-right {
+    bottom: 1em;
+    right: 1em;
+}
