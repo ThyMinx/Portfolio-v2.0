@@ -20,27 +20,30 @@ aboutMeBtn.addEventListener('click', function(){goToSection(aboutMeBtn);});
 
 var req = new XMLHttpRequest();
 
-req.open('GET','https://api.github.com/users/thyminx/starred',true);
+// req.open('GET','https://api.github.com/users/thyminx/starred',true);
+// req.open('GET','https://githubinfograbberapi.azurewebsites.net/api/GitHubInfo?url=https://www.github.com/thyminx',true);
+req.open('GET','https://localhost:7118/api/GitHubInfo?url=https://www.github.com/thyminx',true);
 
 req.onload = function(){
     var data = JSON.parse(this.response);
-    // console.log(data);
+    console.log(data);
 
     var projectsHTML = '';
     var count = 0;
 
-    $.each(data, function(i, project){
+    $.each(data.projects, function(i, profile){
         count++;
         if(count > 4)
         {
             count = 1;
         }
+        console.log(profile);
         projectsHTML += '<div class="project-card">';
         projectsHTML += '<img src="./src/images/project0' + count + '.jpg" class="project-image"/>';
-        projectsHTML += '<h3>' + project.name + '</h3>';
-        projectsHTML += '<p class="subtext">' + project.description.split('.')[0] + '</p>';
+        projectsHTML += '<h3>' + profile.name + '</h3>';
+        projectsHTML += '<p class="subtext">' + profile.description.split('.')[0] + '</p>';
         projectsHTML += '<hr/>';
-        projectsHTML += '<p class="subtext"><a class="project-link" href="' + project.html_url + '">View Code Here</a></p>';
+        projectsHTML += '<p class="subtext"><a class="project-link" href="' + profile.link + '">View Code Here</a></p>';
         projectsHTML += '</div>';
     });
 
