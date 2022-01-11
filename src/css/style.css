@@ -26,10 +26,6 @@ li {
     text-decoration: none;
 }
 
-a:hover {
-    color: #ef744b !important;
-}
-
 h1 {
     font-size: 90px;
     margin: 0;
@@ -45,9 +41,22 @@ p {
     font-weight: 300;
 }
 
+.information a {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+.information a:hover {
+    color: #ad4320 !important;
+}
+
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    color: #ef744b !important;
 }
 
 hr {
@@ -157,6 +166,46 @@ hr {
 .button:active {
     background-color: #A9A9A9;
     color: #808080;
+}
+
+.abtme-header-container {
+    display:flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.abtme-line {
+    background-color: #ef744b;
+    height: 2px;
+    width: 45%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 275px;
+}
+
+.proj-header-container {
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+
+.left-proj-line {
+    background-color: #ef744b;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    left:5em;
+    top: 50%;
+}
+.right-proj-line {
+    background-color: #ef744b;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    right:5em;
+    top: 50%;
 }
 
 .sub-section {
